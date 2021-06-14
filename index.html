@@ -8,12 +8,31 @@
     <title>Git Demo Project</title>
 </head>
 <body>
-  <h1> 
-      this is to showcase git
-  </h1>  
-  <p>
-       title to showcase
-  </p>
-  <script src="main.js"></script>
+    <div>
+        <a href=index.html> Home</a>
+        &nbsp;
+        <a href=about.html> About</a>
+    </div>
+    <div id ="paragraph">
+        <h1 id="head"> 
+            this is to showcase git
+        </h1>  
+        <p>
+            <b>
+                title to showcase
+            </b>
+        </p>
+    </div>
+    <button id="change" onclick="change()" value ="change" >click here</button>
+
+<script src="main.js"></script>
 </body>
+<script>
+    function change(){
+        document.body.style.backgroundColor = "red";
+        document.getElementById("paragraph").style.backgroundColor="yellow";
+        document.getElementById("head").style.backgroundColor="green";
+
+    }
+</script>
 </html>
